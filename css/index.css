@@ -136,6 +136,7 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
+  width: 100%;
 }
 h1,
 h2,
@@ -176,6 +177,11 @@ nav .links {
   width: 30%;
   margin: 1%;
 }
+@media ( max-width: 500px ) {
+  nav .links {
+    width: 65%;
+  }
+}
 nav .links a {
   color: black;
   font-size: 1.5rem;
@@ -202,11 +208,24 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media ( max-width: 500px ) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media ( max-width: 500px ) {
+  .home .space-images img {
+    width: 95%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -223,6 +242,11 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media ( max-width: 500px ) {
+  .home .walk {
+    flex-direction: column-reverse;
+  }
 }
 .home .walk .walk-text {
   width: 50%;

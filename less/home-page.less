@@ -10,6 +10,11 @@
 
     p {
       padding:0 15px;
+
+      @media @phone {
+        padding: 5%;
+      }
+
     }
   
   }
@@ -37,7 +42,8 @@
       height: 100%;
 
       @media @phone {
-        width: 95%;
+        width: 80%;
+        margin: 2% 10%;
       }
 
     }
@@ -45,6 +51,10 @@
 
   .visit-planets {
     padding: 15px;
+
+    @media @phone {
+      padding: 10%;
+    }
 
     h3 {
       margin-top: 11px;
@@ -69,6 +79,10 @@
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 100%;
+      }
+
       h3 {
         margin-bottom: 10px;
       }
@@ -84,6 +98,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin: 0;
+      }
       
       img {
         width: 100%;
@@ -97,6 +116,10 @@
 .btn {
   .custom-btn();
   .displayFlex(center, center);
+
+  @media @phone {
+    width: 100%;
+  }
 
   &:hover {
     .custom-btn(@waterloo, 200px, black);

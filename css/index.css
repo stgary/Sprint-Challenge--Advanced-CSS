@@ -162,9 +162,10 @@ p {
 }
 nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 100%;
-  align-items: center;
 }
 nav .title h1 {
   font-size: 3rem;
@@ -240,4 +241,32 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.btn {
+  display: block;
+  background-color: #24214C;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  display: block;
+  background-color: #81848E;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

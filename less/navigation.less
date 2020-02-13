@@ -1,1 +1,35 @@
 // Navigation code here
+
+nav {
+    .displayFlex(center, center);
+    flex-direction: column;
+    width: 100%;
+    
+
+    .title {
+
+        h1 {
+            font-size: 3rem;
+        }
+    
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        margin: 1%;
+
+        @media @phone {
+            width: 65%;
+        }
+
+        a {
+        color: black;
+        font-size: 1.5rem;
+        text-decoration: none;
+        }
+    
+    }
+
+}
